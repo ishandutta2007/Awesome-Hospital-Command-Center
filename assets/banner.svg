@@ -1,1 +1,214 @@
-﻿
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070c18"/>
+      <stop offset="50%" stop-color="#0b152b"/>
+      <stop offset="100%" stop-color="#050914"/>
+    </linearGradient>
+
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="glowPulse" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.45"/>
+      <circle cx="40" cy="40" r="1.5" fill="#06B6D4" fill-opacity="0.3"/>
+    </pattern>
+
+    <style>
+      @keyframes pulseAnimation {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.95; transform: scale(1.08); }
+      }
+      @keyframes ecgLine {
+        0% { stroke-dashoffset: 2000; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes radarSweep {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-5px); }
+      }
+      @keyframes liveBlink {
+        0%, 100% { opacity: 1; fill: #10B981; }
+        50% { opacity: 0.25; fill: #059669; }
+      }
+      @keyframes scanBeam {
+        0% { transform: translateY(-40px); opacity: 0; }
+        50% { opacity: 0.6; }
+        100% { transform: translateY(380px); opacity: 0; }
+      }
+      .pulse-ring {
+        transform-origin: 1040px 140px;
+        animation: pulseAnimation 3s ease-in-out infinite;
+      }
+      .pulse-ring-2 {
+        transform-origin: 1040px 140px;
+        animation: pulseAnimation 3s ease-in-out 1.5s infinite;
+      }
+      .ecg-anim {
+        stroke-dasharray: 2000;
+        animation: ecgLine 8s linear infinite;
+      }
+      .radar-needle {
+        transform-origin: 1040px 140px;
+        animation: radarSweep 5s linear infinite;
+      }
+      .floating-card {
+        animation: floatSlow 4s ease-in-out infinite;
+      }
+      .floating-card-2 {
+        animation: floatSlow 4s ease-in-out 2s infinite;
+      }
+      .live-dot {
+        animation: liveBlink 1.4s ease-in-out infinite;
+      }
+      .scanner {
+        animation: scanBeam 4s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="420" fill="url(#bgGrad)" rx="16"/>
+  <rect width="1200" height="420" fill="url(#grid)" rx="16"/>
+
+  <!-- Scanning Line Effect -->
+  <line x1="40" y1="0" x2="1160" y2="0" stroke="url(#cyanGrad)" stroke-width="1.5" opacity="0.3" class="scanner"/>
+
+  <!-- Ambient Glow Orbs -->
+  <circle cx="150" cy="100" r="140" fill="#06B6D4" fill-opacity="0.08" filter="url(#glowPulse)"/>
+  <circle cx="1040" cy="140" r="130" fill="#3B82F6" fill-opacity="0.12" filter="url(#glowPulse)"/>
+  <circle cx="600" cy="380" r="180" fill="#8B5CF6" fill-opacity="0.07" filter="url(#glowPulse)"/>
+
+  <!-- Radar / Command Center Hub Visualization (Right Side) -->
+  <g>
+    <!-- Concentric Rings -->
+    <circle cx="1040" cy="140" r="95" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+    <circle cx="1040" cy="140" r="70" fill="none" stroke="#0e7490" stroke-width="1" stroke-dasharray="4,4"/>
+    <circle cx="1040" cy="140" r="45" fill="none" stroke="#06B6D4" stroke-width="1.2" stroke-opacity="0.7"/>
+    <circle cx="1040" cy="140" r="20" fill="#06B6D4" fill-opacity="0.15"/>
+
+    <!-- Pulse Rings -->
+    <circle cx="1040" cy="140" r="85" fill="none" stroke="#38bdf8" stroke-width="1.2" class="pulse-ring"/>
+    <circle cx="1040" cy="140" r="60" fill="none" stroke="#10b981" stroke-width="1.2" class="pulse-ring-2"/>
+
+    <!-- Crosshairs -->
+    <line x1="930" y1="140" x2="1150" y2="140" stroke="#0e7490" stroke-width="1" stroke-opacity="0.5"/>
+    <line x1="1040" y1="30" x2="1040" y2="250" stroke="#0e7490" stroke-width="1" stroke-opacity="0.5"/>
+
+    <!-- Radar Rotating Beam -->
+    <line x1="1040" y1="140" x2="1135" y2="140" stroke="url(#cyanGrad)" stroke-width="2.5" class="radar-needle" filter="url(#glowCyan)"/>
+
+    <!-- Target Blips -->
+    <circle cx="1010" cy="100" r="3.5" fill="#10B981" filter="url(#glowGreen)" class="live-dot"/>
+    <circle cx="1075" cy="120" r="3" fill="#06B6D4" filter="url(#glowCyan)"/>
+    <circle cx="1025" cy="175" r="4" fill="#3B82F6" filter="url(#glowCyan)"/>
+    <circle cx="1090" cy="180" r="3.5" fill="#F59E0B"/>
+  </g>
+
+  <!-- Left Header: Title & Badges -->
+  <!-- Live Operational Status Tag -->
+  <g transform="translate(60, 48)">
+    <rect x="0" y="0" width="220" height="28" rx="14" fill="#0f172a" stroke="#0e7490" stroke-width="1"/>
+    <circle cx="14" cy="14" r="5" class="live-dot"/>
+    <text x="28" y="18" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">LIVE SYSTEM MONITOR</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="60" y="125" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="36" font-weight="900" letter-spacing="-0.5">
+    HOSPITAL COMMAND CENTER
+  </text>
+  
+  <text x="60" y="165" fill="url(#cyanGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" letter-spacing="0.5">
+    OPERATIONAL INTELLIGENCE &amp; PATIENT FLOW ECOSYSTEM
+  </text>
+
+  <!-- Subtitle -->
+  <text x="60" y="200" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="400">
+    Curated SaaS Platforms • Open-Source Systems • Real-Time Capacity &amp; Telemetry Analytics
+  </text>
+
+  <!-- ECG / Telemetry Dynamic Sine Line -->
+  <g filter="url(#glowCyan)">
+    <path d="M 60 250 L 220 250 L 235 235 L 245 265 L 260 210 L 275 285 L 290 240 L 305 250 L 480 250 L 495 230 L 505 270 L 520 195 L 535 295 L 550 235 L 565 250 L 740 250 L 755 235 L 765 265 L 780 205 L 795 290 L 810 240 L 825 250 L 1140 250" 
+          fill="none" stroke="url(#cyanGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="ecg-anim"/>
+  </g>
+
+  <!-- Operational Telemetry Metric Cards -->
+  <g transform="translate(60, 290)" class="floating-card">
+    <rect width="210" height="90" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    <rect x="0" y="0" width="4" height="90" rx="2" fill="#06B6D4"/>
+    <text x="18" y="28" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" letter-spacing="1">BED OCCUPANCY</text>
+    <text x="18" y="58" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800">92.4%</text>
+    <circle cx="180" cy="50" r="6" fill="#10B981" class="live-dot"/>
+    <text x="18" y="76" fill="#10B981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600">● Real-Time ADT Synced</text>
+  </g>
+
+  <g transform="translate(290, 290)" class="floating-card-2">
+    <rect width="210" height="90" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    <rect x="0" y="0" width="4" height="90" rx="2" fill="#10B981"/>
+    <text x="18" y="28" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" letter-spacing="1">OR UTILIZATION</text>
+    <text x="18" y="58" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800">88.6%</text>
+    <circle cx="180" cy="50" r="6" fill="#06B6D4"/>
+    <text x="18" y="76" fill="#06B6D4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600">▲ +14% Predictive AI Block</text>
+  </g>
+
+  <g transform="translate(520, 290)" class="floating-card">
+    <rect width="210" height="90" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    <rect x="0" y="0" width="4" height="90" rx="2" fill="#8B5CF6"/>
+    <text x="18" y="28" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" letter-spacing="1">FHIR DATA STREAM</text>
+    <text x="18" y="58" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800">4.8k <tspan font-size="14" fill="#94A3B8">msg/s</tspan></text>
+    <circle cx="180" cy="50" r="6" fill="#8B5CF6" class="live-dot"/>
+    <text x="18" y="76" fill="#A78BFA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600">HL7 v2 / FHIR R4 / DICOM</text>
+  </g>
+
+  <g transform="translate(750, 290)" class="floating-card-2">
+    <rect width="210" height="90" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    <rect x="0" y="0" width="4" height="90" rx="2" fill="#EC4899"/>
+    <text x="18" y="28" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" letter-spacing="1">EARLY WARNING (NEWS2)</text>
+    <text x="18" y="58" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800">99.2% <tspan font-size="14" fill="#10B981">AUC</tspan></text>
+    <circle cx="180" cy="50" r="6" fill="#EC4899"/>
+    <text x="18" y="76" fill="#F472B6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600">Predictive Deterioration Triage</text>
+  </g>
+
+  <g transform="translate(980, 290)" class="floating-card">
+    <rect width="160" height="90" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    <rect x="0" y="0" width="4" height="90" rx="2" fill="#F59E0B"/>
+    <text x="16" y="28" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" letter-spacing="1">SYSTEM UPTIME</text>
+    <text x="16" y="58" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800">99.99%</text>
+    <text x="16" y="76" fill="#FBBF24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600">Enterprise Ready</text>
+  </g>
+</svg>
