@@ -22,80 +22,33 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-- **[GE HealthCare Command Center](https://www.gehealthcare.com/en/products/software/command-center)**  
-  Hospital command-center software integrating multiple source systems to provide real-time operational insights for care orchestration, capacity management, staffing, scheduling, communication, and hospital-wide optimization. GE HealthCare describes deployments across hundreds of hospitals and tens of thousands of beds. 
-
-- **[TeleTracking](https://www.teletracking.com/)**  
-  Hospital patient-flow and capacity-management platform focused on real-time visibility, patient throughput, bed management, transfer coordination, environmental services, and operational workflows.
-
-- **[Care.ai](https://www.care.ai/)**  
-  AI-powered smart-care platform using ambient sensing, virtual care, patient monitoring, and operational intelligence to provide visibility across hospital environments.
-
-- **[Qventus](https://www.qventus.com/)**  
-  AI-powered healthcare operations platform focused on patient flow, surgical operations, discharge, capacity management, staffing, and workflow automation.
-
-- **[LeanTaaS](https://leantaas.com/)**  
-  Healthcare operations optimization platform using predictive analytics and AI to optimize inpatient capacity, operating rooms, infusion centers, and other constrained resources.
-
-- **[Central Logic](https://www.centrallogic.com/)**  
-  Transfer-center and patient-flow technology designed to coordinate patient transfers, referrals, capacity, and access across health systems.
-
-- **[Philips Command Center](https://www.philips.com/)**  
-  Healthcare command-center capabilities combining operational data, patient-flow intelligence, clinical workflows, and hospital capacity visibility.
-
-- **[Palantir Foundry for Health](https://www.palantir.com/solutions/healthcare/)**  
-  Data and operational intelligence platform that can integrate healthcare data sources and support hospital operations, resource optimization, workflow orchestration, and decision intelligence.
-
-- **[Hospital IQ](https://www.hospiq.com/)**  
-  Hospital operations intelligence platform focused on patient flow, capacity management, staffing, discharge, throughput, and operational decision support.
-
-- **[Artisight](https://www.artisight.com/)**  
-  Smart-hospital platform using computer vision, sensors, ambient intelligence, and AI to monitor workflows, patient safety, clinical operations, and hospital environments.
-
-- **[Laudio](https://www.laudio.com/)**  
-  Healthcare operations and workforce intelligence platform helping hospital leaders manage frontline teams, operational performance, engagement, and workforce workflows.
-
-- **[XSOLIS](https://xsolis.com/)**  
-  Healthcare AI platform focused on utilization management, patient status, medical necessity, and operational decision support.
-
-- **[Aidoc](https://www.aidoc.com/)**  
-  AI healthcare platform providing real-time clinical intelligence and workflow orchestration that can support enterprise-wide operational and clinical command-center environments.
-
-- **[Clew](https://www.clewmed.com/)**  
-  AI-powered predictive clinical intelligence platform focused on patient deterioration and ICU decision support.
-
-- **[Biofourmis](https://biofourmis.com/)**  
-  AI-powered healthcare platform providing remote monitoring, predictive analytics, and clinical decision support for patient populations.
-
-- **[HCA Healthcare Command Center](https://hcahealthcare.com/)**  
-  Large-scale health-system operational command-center approach using centralized data, capacity visibility, and operational analytics to coordinate hospital activity.
-
-- **[Kaiser Permanente Command Center](https://healthy.kaiserpermanente.org/)**  
-  Health-system command-center model integrating operational intelligence, patient flow, capacity, and coordination capabilities.
-
-- **[Sg2](https://www.sg2.com/)**  
-  Healthcare intelligence and analytics platform providing health-system strategy, capacity, demand, and operational insights.
-
-- **[Corti](https://www.corti.ai/)**  
-  AI platform supporting clinical decision-making and emergency-care workflows through real-time conversational and clinical intelligence.
-
-- **[NVIDIA Healthcare](https://www.nvidia.com/en-us/industries/healthcare/)**  
-  AI infrastructure and healthcare computing ecosystem that can support computer vision, medical AI, digital twins, simulation, and real-time operational intelligence applications.
-
-- **[Microsoft Cloud for Healthcare](https://www.microsoft.com/en-us/industry/health/microsoft-cloud-for-healthcare)**  
-  Healthcare cloud platform providing data, interoperability, AI, analytics, workflow, and collaboration components that can be assembled into hospital command-center solutions.
-
-- **[Google Cloud Healthcare](https://cloud.google.com/solutions/healthcare)**  
-  Healthcare data and AI platform providing interoperability, analytics, machine learning, and data infrastructure for hospital operational intelligence.
-
-- **[AWS for Health](https://aws.amazon.com/health/)**  
-  Cloud infrastructure and healthcare services supporting data lakes, analytics, machine learning, interoperability, and real-time hospital operations applications.
-
-- **[Snowflake Healthcare & Life Sciences](https://www.snowflake.com/en/industries/healthcare-life-sciences/)**  
-  Healthcare data-cloud platform that can provide the centralized data foundation for operational analytics, command-center dashboards, and AI applications.
-
-- **[Databricks Healthcare & Life Sciences](https://www.databricks.com/solutions/industries/healthcare-life-sciences)**  
-  Data and AI platform supporting healthcare data engineering, analytics, machine learning, and operational intelligence.
+| Product | Description | Pricing | Free Tier / Trial Limits |
+| :--- | :--- | :--- | :--- |
+| **[GE HealthCare Command Center](https://www.gehealthcare.com/en/products/software/command-center)** | Enterprise hospital command-center software integrating source systems for real-time operational insights, capacity management, staffing, and bed orchestration. | Starting at ~$150,000/year base deployment license | 60-day guided evaluation trial in staging sandbox (evaluation only; not for production clinical use) |
+| **[TeleTracking](https://www.teletracking.com/)** | Real-time patient flow and capacity management platform for bed placement, transfer coordination, environmental services, and transport workflows. | Starting at ~$10/bed/month (~$50,000/year base platform tier) | 30-day interactive simulation pilot / POC upon enterprise qualification |
+| **[Care.ai](https://www.care.ai/)** | Smart-care facility platform using ambient sensing, virtual nursing, computer vision, and operational intelligence to monitor clinical environments. | Starting at ~$200/smart-room per month (sensor hardware lease + cloud analytics) | 60-day single-department pilot evaluation for up to 10 rooms |
+| **[Qventus](https://www.qventus.com/)** | AI-powered healthcare operations platform for perioperative scheduling, inpatient discharge planning, and real-time patient-flow automation. | Starting at ~$10,000/month (~$120,000/year per acute care facility) | 45-day retrospective EHR data & operational bottleneck assessment trial |
+| **[LeanTaaS](https://leantaas.com/)** | AI and predictive analytics platform (iQueue) for optimizing operating room block utilization, infusion chair scheduling, and inpatient capacity. | Starting at ~$20,000/year per infusion center (~$100,000/year per OR suite) | 30-day historical capacity simulation and ROI diagnostic pilot |
+| **[Central Logic](https://www.centrallogic.com/)** | Patient transfer-center and health-system access orchestration technology for coordinating admissions, bed availability, and inter-facility transports. | Starting at ~$75,000/year per regional transfer-center deployment | 30-day transfer-flow workflow demo & simulation access |
+| **[Philips Command Center](https://www.philips.com/)** | Clinical and operational intelligence platform integrating patient-flow telemetry, radiology workflows, and hospital capacity monitoring. | Starting at ~$100,000/year for core PerformanceBridge / IntelliSpace operations modules | 60-day evaluation trial for select operational analytics modules |
+| **[Palantir Foundry for Health](https://www.palantir.com/solutions/healthcare/)** | Enterprise data ontology and operational intelligence platform for multi-source healthcare data integration, resource allocation, and AI workflow orchestration. | Starting at ~$250,000/year ($20,833/month entry enterprise tier on cloud marketplaces) | 30-day AIP Bootcamp and guided proof-of-concept workspace |
+| **[Hospital IQ](https://www.hospiq.com/)** | Operations management software providing predictive analytics for patient throughput, staffing optimization, and perioperative resource management. | Starting at ~$60,000/year per hospital module (~$15/bed/month base) | 30-day guided operational analytics pilot with historical ADT data |
+| **[Artisight](https://www.artisight.com/)** | Ambient smart-hospital platform using IoT sensors and computer vision for virtual nursing, patient safety, fall prevention, and clinical workflow tracking. | Starting at ~$150/bed per month (sensor IoT infrastructure + software license) | 60-day clinical pilot program for a designated hospital unit |
+| **[Laudio](https://www.laudio.com/)** | Healthcare workforce intelligence and operations platform designed to streamline frontline nursing workflows, leadership engagement, and retention. | Starting at ~$5/employee per month (~$30,000/year per hospital deployment) | 30-day guided pilot for up to 50 frontline managers |
+| **[XSOLIS](https://xsolis.com/)** | AI-driven utilization management platform (CORTEX) assessing patient clinical status, medical necessity, and level-of-care determination in real time. | Starting at ~$50,000/year per hospital facility | 30-day retrospective EHR case analysis and medical necessity proof-of-concept |
+| **[Aidoc](https://www.aidoc.com/)** | Clinical AI operating system (aiOS) for radiology triage, acute care notification, and enterprise-wide care coordination. | Starting at ~$30,000/year per imaging AI clinical package (~$3.50/scanned study) | 30-day clinical validation trial on pre-selected radiology feeds |
+| **[Clew](https://www.clewmed.com/)** | AI predictive analytics platform for ICU patient deterioration, hemodynamic monitoring, and tele-ICU command-center decision support. | Starting at ~$1,500/ICU bed per year | 30-day ICU retrospective patient data validation trial |
+| **[Biofourmis](https://biofourmis.com/)** | Virtual care and remote patient management platform providing continuous physiological monitoring, predictive analytics, and Hospital-at-Home operations. | Starting at ~$150/monitored patient per month | 30-day remote patient management pilot for up to 25 patients |
+| **[HCA Healthcare Command Center](https://hcahealthcare.com/)** | Enterprise-scale health-system operations and logistical command-center framework for capacity visibility and patient placement orchestration. | Starting at ~$200,000/year for enterprise co-development and advisory framework | 14-day operational assessment and command-center architecture workshop |
+| **[Kaiser Permanente Command Center](https://healthy.kaiserpermanente.org/)** | Integrated delivery network command-center blueprint for patient throughput, ambulatory care management, and regional bed coordination. | Starting at ~$200,000/year for enterprise reference model and integration architecture | 14-day health-system throughput audit and operational blueprint review |
+| **[Sg2](https://www.sg2.com/)** | Healthcare analytics and market intelligence platform providing forecasting on inpatient/outpatient demand, service-line capacity, and strategic growth. | Starting at ~$25,000/year for core market analytics subscription | 14-day sample market forecasting report and interactive dashboard trial |
+| **[Corti](https://www.corti.ai/)** | Real-time clinical AI and voice assistant platform providing clinical consultations, triage guidance, and automatic medical coding. | $4.00/1M input tokens + $16.00/1M output tokens (API); Acceleration Pack from $1,000/month | Free $50 API credit upon console signup; Corti for Startups grants $5,000 in credits valid for 12 months |
+| **[NVIDIA Healthcare](https://www.nvidia.com/en-us/industries/healthcare/)** | AI computing infrastructure and healthcare microservices (NVIDIA NIM, Clara, Holoscan) for real-time medical imaging, digital twins, and sensor intelligence. | $4,500/GPU per year (NVIDIA AI Enterprise annual subscription) or $1.00/GPU per hour via cloud marketplaces | 90-day free evaluation license for NVIDIA AI Enterprise & NIM microservices |
+| **[Microsoft Cloud for Healthcare](https://www.microsoft.com/en-us/industry/health/microsoft-cloud-for-healthcare)** | Healthcare cloud solution offering FHIR interoperability, EHR connectors, patient engagement portals, and operational command-center templates. | $20,000/tenant per month (base healthcare add-on); Azure Health Data Services from $0.20/GB storage + $0.001/query | 30-day free trial with $200 Azure credits + 30-day trial for Dynamics 365 / Power Apps healthcare environments |
+| **[Google Cloud Healthcare](https://cloud.google.com/solutions/healthcare)** | Healthcare data platform featuring Cloud Healthcare API (FHIR, HL7v2, DICOM) and BigQuery analytics for hospital command-center operational pipelines. | $0.15/GB-month storage; $0.001 per 10,000 standard requests / $0.10 per 1,000 FHIR transforms | Always Free tier: First 25,000 advanced requests/month & 1 GB storage free; plus 90-day $300 credit trial for new accounts |
+| **[AWS for Health](https://aws.amazon.com/health/)** | Healthcare and life sciences cloud infrastructure featuring AWS HealthLake for FHIR data ingestion, query indexing, and operational data lakes. | $0.27/Data Store hour + $0.37/GB-month for storage over 10 GB (Advanced tier) | Includes 10 GB storage and 3,500 FHIR queries/hour within datastore; 12-month AWS Free Tier with $100–$300 promotional credit eligibility |
+| **[Snowflake Healthcare & Life Sciences](https://www.snowflake.com/en/industries/healthcare-life-sciences/)** | Healthcare Data Cloud enabling secure health data sharing, unified patient records, and real-time operational dashboard analytics. | Standard Edition from $2.00/credit (Enterprise from $3.00/credit; ~23 credits/month for baseline XS virtual warehouse) | 30-day free trial with $400 in free compute and storage credits (no credit card required) |
+| **[Databricks Healthcare & Life Sciences](https://www.databricks.com/solutions/industries/healthcare-life-sciences)** | Lakehouse platform for healthcare data engineering, real-time clinical stream processing, and predictive ML for patient flow and capacity. | From $0.07 to $0.55/DBU (Standard/Premium/Enterprise data engineering & SQL tiers) + underlying compute | 14-day full-featured commercial free trial with up to $400 cloud compute trial credits; permanent Free Edition for individual learning |
 
 ## Open-Source GitHub Projects
 
