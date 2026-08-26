@@ -1,6 +1,6 @@
 # Awesome-Hospital-Command-Center
 
-## Top Hospital Command Center Ecosystem
+### Top Hospital Command Center Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Hospital Operations Command Centers, Patient Flow, Capacity Management, Care Coordination & Operational Intelligence*  
